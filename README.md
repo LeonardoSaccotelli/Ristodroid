@@ -8,7 +8,7 @@ Il cameriere potrà visualizzare e modificare l'ordine, inserire il numero del t
 la tipologia dei coperti ed eventuali note aggiuntive. A questo punto l'ordine sarà confermato ed inviato. 
 Il progetto è stato realizzato nell'ambito dell'esame Mobile Software Development.
 
-##Struttura progetto
+#Struttura progetto
 * Nella cartella ```database``` è presente il file ```ristodroid.sql``` contenente la definizione del database relazionale sviluppato in MySql
 * Nella cartella ```app``` è presente tutto il codice relativo all'applicazione del cliente
 * Nella cartella ```waiter``` è presente tutto il codice relativo all'applicazione del cameriere

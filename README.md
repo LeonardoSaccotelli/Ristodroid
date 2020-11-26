@@ -14,3 +14,6 @@ Il progetto è stato realizzato nell'ambito dell'esame Mobile Software Developme
 * Nella cartella ```waiter``` è presente tutto il codice relativo all'applicazione del cameriere
 * Nella cartella ```script php server/Ristodroid/Service``` sono presenti gli script php per comunicare con il server remoto
 * Nella cartella ```doc``` è presente una breve documentazione del progetto è una breve dimostrazione del funzionamento dell'applicazione. Rispetto alla presentazione nel video sono state aggiunte nuove funzionaltà.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

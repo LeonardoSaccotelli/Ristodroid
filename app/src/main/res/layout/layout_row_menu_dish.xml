@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dishes_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_menu_dish"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="@string/row_category"
+                android:scaleType="fitXY"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/summary_text_add_variations"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_dish_title"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/image_menu_dish"
+                android:paddingHorizontal="3dp"
+                card_view:layout_constraintBottom_toTopOf="@+id/summary_text_dish_price"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintStart_toEndOf="@+id/image_menu_dish"
+                card_view:layout_constraintTop_toBottomOf="@+id/text_dish_title"
+                tools:text="Pomodoro san marzano DOP, mozzarella, basilico, pecorino romano"/>
+
+            <TextView
+                android:id="@+id/text_dish_title"
+                style="@style/dishTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/image_menu_dish"
+                android:paddingHorizontal="3dp"
+                card_view:layout_constraintBottom_toTopOf="@+id/summary_text_add_variations"
+                card_view:layout_constraintEnd_toStartOf="@+id/textDishScore"
+                card_view:layout_constraintStart_toEndOf="@+id/image_menu_dish"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintVertical_chainStyle="packed"
+                tools:text="margherita" />
+
+
+            <TextView
+                android:id="@+id/textDishScore"
+                style="@style/dishTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/image_menu_dish"
+                android:paddingHorizontal="3dp"
+                android:textAlignment="textEnd"
+                card_view:layout_constraintEnd_toStartOf="@+id/list_ReviewStarIcon"
+                card_view:layout_constraintTop_toTopOf="@+id/text_dish_title"
+                tools:text="5" />
+
+            <TextView
+                android:id="@+id/summary_text_dish_price"
+                style="@style/price"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/summary_text_add_variations"
+                android:layout_marginEnd="2dp"
+                android:layout_toEndOf="@id/image_menu_dish"
+                android:gravity="end"
+                android:padding="8dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintStart_toEndOf="@+id/image_menu_dish"
+                tools:text="€4.50"/>
+
+            <RatingBar
+                android:id="@+id/list_ReviewStarIcon"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:numStars="1"
+                android:progressTint="@color/star"
+                android:stepSize="1"
+                card_view:layout_constraintBottom_toBottomOf="@+id/textDishScore"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="@+id/textDishScore"
+                card_view:srcCompat="@drawable/star" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

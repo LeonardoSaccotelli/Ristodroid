@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- colori per splash screen -->
+    <color name="colorSplashScreenBackground">#E0E0E0</color>
+    <color name="colorRedTitle">#A82C01</color>
+
+<!-- material palette -->
+    <color name="background">#EEEEEE</color>
+    <color name="primary">#F44336</color>
+    <color name="primary_dark">#D32F2F</color>
+    <color name="primary_light">#FFCDD2</color>
+    <color name="accent">#FF5252</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="button_bg">#3E3E3E</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="plus_button">#388E3C</color>
+    <color name="minus_button">#D32F2F</color>
+</resources>

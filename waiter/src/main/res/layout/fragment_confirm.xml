@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:waiter="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        waiter:cardUseCompatPadding="true"
+        waiter:layout_constraintBottom_toBottomOf="parent"
+        waiter:layout_constraintEnd_toEndOf="parent"
+        waiter:layout_constraintStart_toStartOf="parent"
+        waiter:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textselectSeatIntoSpinner"
+                style="@style/dishTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:gravity="center"
+                android:hint="@string/select_seat_type"
+                android:padding="12dp"
+                waiter:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+                waiter:layout_constraintEnd_toEndOf="parent"
+                waiter:layout_constraintHorizontal_bias="0.051"
+                waiter:layout_constraintStart_toStartOf="parent"
+                waiter:layout_constraintTop_toTopOf="@+id/divider2" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/confirm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:contentDescription="@string/button_add_dish"
+                android:src="@drawable/check"
+                waiter:backgroundTint="@color/accent"
+                waiter:layout_constraintBottom_toBottomOf="parent"
+                waiter:layout_constraintEnd_toEndOf="parent"
+                waiter:tint="@color/icons" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="?android:attr/listDivider"
+                waiter:layout_constraintEnd_toEndOf="parent"
+                waiter:layout_constraintStart_toStartOf="parent"
+                waiter:layout_constraintTop_toBottomOf="@+id/text_selected_seat" />
+
+            <TextView
+                android:id="@+id/text_selected_seat"
+                style="@style/confirmText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                waiter:layout_constraintEnd_toEndOf="parent"
+                waiter:layout_constraintHorizontal_bias="0.0"
+                waiter:layout_constraintStart_toStartOf="parent"
+                waiter:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/selectumberOfSeatSpinner"
+                style="@style/dishTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:gravity="center"
+                android:hint="@string/select_seat_number"
+                android:padding="12dp"
+                waiter:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+                waiter:layout_constraintEnd_toEndOf="parent"
+                waiter:layout_constraintHorizontal_bias="0.0"
+                waiter:layout_constraintStart_toStartOf="parent"
+                waiter:layout_constraintTop_toBottomOf="@+id/textselectSeatIntoSpinner" />
+
+            <EditText
+                android:id="@+id/extraInfoOrder"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="fill_horizontal"
+                android:hint="@string/extraInfoOrder"
+                style="@android:style/Widget.Material.EditText"
+                android:background="@android:drawable/editbox_background_normal"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textAllCaps="true"
+                waiter:layout_constraintBottom_toBottomOf="parent"
+                waiter:layout_constraintEnd_toEndOf="parent"
+                waiter:layout_constraintStart_toStartOf="parent"
+                waiter:layout_constraintTop_toBottomOf="@+id/selectumberOfSeatSpinner"
+                waiter:layout_constraintVertical_bias="0.0"
+                android:autofillHints="" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

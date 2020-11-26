@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_menu">
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="controllers.ui.menu.MenuFragment"
+        android:label="@string/title_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_navigation_menu_to_dishesFragment"
+            app:destination="@id/dishesFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_summary"
+        android:name="controllers.ui.summary.SummaryFragment"
+        android:label="@string/title_summary"
+        tools:layout="@layout/fragment_summary" />
+
+    <fragment
+        android:id="@+id/navigation_receipt"
+        android:name="controllers.ui.receipt.ReceiptFragment"
+        android:label="@string/title_receipt"
+        tools:layout="@layout/fragment_receipt" >
+        <action
+            android:id="@+id/action_navigation_receipt_to_navigation_menu"
+            app:destination="@id/navigation_menu"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/navigation_receipt"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/dishesFragment"
+        android:name="controllers.ui.menu.DishesFragment"
+        android:label="fragment_dishes"
+        tools:layout="@layout/fragment_dishes" >
+        <action
+            android:id="@+id/action_dishesFragment_to_navigation_dish_details"
+            app:destination="@id/navigation_dish_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dish_details"
+        android:name="controllers.ui.menu.DishDetailsFragment"
+        android:label="@string/title_details_dish"
+        tools:layout="@layout/fragment_dish_details" >
+        <action
+            android:id="@+id/action_navigation_dish_details_to_navigation_variation"
+            app:destination="@id/navigation_variation" />
+        <action
+            android:id="@+id/action_navigation_dish_details_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_variation"
+        android:name="controllers.ui.menu.VariationFragment"
+        android:label="@string/variations"
+        tools:layout="@layout/fragment_variation" >
+        <action
+            android:id="@+id/action_navigation_variation_to_dish_fragment"
+            app:destination="@id/dishesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/navigation_menu"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="controllers.ui.menu.review.ReviewFragment"
+        android:label="ReviewFragment" >
+        <action
+            android:id="@+id/action_reviewFragment_to_enterReviewFragment"
+            app:destination="@id/enterReviewFragment"
+            app:popUpTo="@id/reviewFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterReviewFragment"
+        android:name="controllers.ui.menu.review.EnterReviewFragment"
+        android:label="EnterReviewFragment" >
+        <action
+            android:id="@+id/action_enterReviewFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment"
+            app:popUpTo="@id/enterReviewFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/senderActivity"
+        android:name="nfc.SenderActivity"
+        android:label="activity_sender"
+        tools:layout="@layout/activity_sender" />
+
+</navigation>

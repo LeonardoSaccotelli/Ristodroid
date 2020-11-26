@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/receipt_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_list_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="?android:attr/windowSwipeToDismiss"
+        card_view:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_receipt_dish_title"
+                style="@style/dishTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/receipt_text_add_variations"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                tools:text="MARGHERITA" />
+
+            <TextView
+                android:id="@+id/receipt_text_add_variations"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="36dp"
+                android:paddingHorizontal="3dp"
+                android:textColor="@color/plus_button"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintBottom_toTopOf="@+id/receipt_text_minus_variations"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                tools:text="+ Mozzarrella, Pomodoro, Ricotta" />
+
+            <TextView
+                android:id="@+id/receipt_text_minus_variations"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receipt_text_add_variations"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:paddingHorizontal="3dp"
+                android:textColor="@color/minus_button"
+                app:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintTop_toBottomOf="@+id/receipt_text_add_variations"
+                tools:text="- Mozzarrella, Pomodoro, Ricotta " />
+
+            <TextView
+                android:id="@+id/receipt_text_dish_price"
+                style="@style/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receipt_text_add_variations"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="end"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/receipt_text_minus_variations"
+                tools:text="€4.50" />
+
+            <TextView
+                android:id="@+id/receipt_text_quantity_summary"
+                style="@style/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/receipt_text_minus_variations"
+                tools:text="1 pz" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

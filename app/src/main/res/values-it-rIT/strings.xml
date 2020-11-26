@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_title">Benvenuto!</string>
+    <string name="choose_action">Cosa vuoi fare?</string>
+    <string name="menu">Menù</string>
+    <string name="bill">Conto</string>
+    <string name="title_menu">Menù</string>
+    <string name="title_summary">Riepilogo</string>
+    <string name="title_receipt">Conto</string>
+    <string name="row_category">Categoria</string>
+    <string name="title_dishes">Piatti</string>
+    <string name="title_details_dish">Dettagli Piatto</string>
+    <string name="button_add_dish">Aggiungi</string>
+    <string name="confirm">Conferma</string>
+    <string name="variations">Variazioni</string>
+    <string name="minusText">Rimuovi ingredienti</string>
+    <string name="plusText">Aggiungi ingredienti</string>
+    <string name="emptySummary">Non ci sono piatti in questo ordine</string>
+    <string name="enterQuantityDish">Inserire Quantità</string>
+    <string name="cancel">Annulla</string>
+    <string name="confirmOrderMessage">Sei sicuro di voler confermare l\'ordine? Se clicchi ok, non potrai più modificarlo!</string>
+
+
+    <!--
+    SEZIONE DEDICATA ALLA DEFINIZIONE DEI PLURALI
+    -->
+    <plurals name="numberOfIngredients">
+        <item quantity="one">Ingrediente</item>
+        <item quantity="other">Ingredienti</item>
+    </plurals>
+
+    <plurals name="numberOfAllergenic">
+        <item quantity="one">Allergene</item>
+        <item quantity="other">Allergeni</item>
+    </plurals>
+
+    <plurals name="numberOfReview">
+        <item quantity="one">recensione</item>
+        <item quantity="other">recensioni</item>
+    </plurals>
+
+
+
+
+    <string name="titleFailedConnectionDB">Attenzione</string>
+    <string name="messageFailedConnectionDB">Impossibile connettersi al database. Useremo l\'ultima versione di menu disponibile.</string>
+    <string name="emptyCategory">Non ci sono piatti in questa categoria</string>
+    <string name="emptyReceipt">Conto non disponibile</string>
+    <string name="addQuantity">Aggiungi quantità</string>
+    <string name="removeQuantity">Rimuovi quantità</string>
+    <string name="deleteDish">Elimina piatto</string>
+    <string name="piece">Pz</string>
+    <string name="deleteDishMessage">Sei sicuro di voler rimuovere il piatto?</string>
+    <string name="addDishToOrder">Piatto aggiunto all\'ordine.</string>
+    <string name="closeOrderTitle">Completa ordine</string>
+    <string name="titleNoAddingDishCloseOrder">Ordine inviato!</string>
+    <string name="contentNoAddingDishCloseOrder">Non puoi aggiungere altri piatti a questo ordine.</string>
+    <string name="removeDishToOrder">Piatto rimosso dall\'ordine</string>
+    <string name="search">Cerca</string>
+    <string name="NoDishFound">Nessun piatto trovato</string>
+    <string name="SyncFailed">Sincronizzazione fallita, verrà visualizzato l\'ultimo menu disponibile</string>
+    <string name="OrderDataRequestFailed">Errore! Impossibile stabilire una connessione al server.</string>
+    <string name="receiptAvailable">Conto non disponibile</string>
+    <string name="total">TOTALE</string>
+    <string name="label_your_message">Ordine completato. Invio in corso…</string>
+    <string name="label_NFC_SEND">Ordine completato. Invio in corso…</string>
+    <string name="nfc_sender_activity">Invio ordine</string>
+    <string name="nfc_disabled">NFC disabilitato su questo dispositivo. Abilitalo per continuare.</string>
+    <string name="nfc_not_supported">NFC non è supportato su questo dispositivo. L\'ordine non può essere inviato.</string>
+    <string name="emptyReview">Recensioni non disponibili</string>
+    <string name="review_section_title">Recensioni</string>
+    <string name="reviewTitleDishDetails">Recensioni</string>
+    <string name="button_text_enter_receipt">Scrivi una recensione</string>
+    <string name="title_enter_review">Inserisci recensione per</string>
+    <string name="EditText_placeholder">Condividi il tuo pensiero su questo piatto</string>
+    <string name="missingReview">Inserire recensione e valutazione!</string>
+    <string name="ReviewReceive">Recensione inviata</string>
+    <string name="resetOrderTitle" >Chiusura conto</string>
+    <string name="resetOrderContent" >Sei sicuro di chiudere il conto? Vai in cassa per pagare.</string>
+    <string name="paytext">Paga</string>
+    <string name="enableNFCRequestTitle">Abilita NFC</string>
+    <string name="enableNFCRequestContent">NFC non attivo! Attiva NFC per inviare questo ordine.</string>
+    <string name="Close">Chiudi</string>
+    <string name="TurnOn">Attiva</string>
+    <string name="order_by_price">Ordina per prezzo</string>
+    <string name="order_by_score">Ordina per voto</string>
+    <string name="order_from_higher">Dal più alto</string>
+    <string name="order_from_lower">Dal più basso</string>
+    <string name="order_by_date">Ordina per data</string>
+    <string name="deleteAllDish">Elimina tutti i piatti</string>
+    <string name="deleteAllDishRequest">Sei sicuro di voler rimuovere tutti i piatti?</string>
+</resources>

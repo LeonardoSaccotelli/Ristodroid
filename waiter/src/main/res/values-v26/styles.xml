@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="categoriesCardStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:font">@font/open_sans_semibold</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+</resources>

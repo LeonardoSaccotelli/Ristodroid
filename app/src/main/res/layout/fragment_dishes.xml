@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_dishes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="controllers.ui.menu.DishesFragment">
+
+    <TextView
+        android:id="@+id/text_empty_category"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="15dp"
+        android:text="@string/emptyCategory"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/secondary_text"
+        android:textSize="22sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dishes_recycler_view">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</FrameLayout>

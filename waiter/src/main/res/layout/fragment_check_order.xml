@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:waiter="http://schemas.android.com/apk/res-auto"
+    tools:context=".CheckOrderFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/summary_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        waiter:layout_constraintBottom_toBottomOf="parent"
+        waiter:layout_constraintEnd_toEndOf="parent"
+        waiter:layout_constraintStart_toStartOf="parent"
+        waiter:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/check_order_floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/button_add_dish"
+        android:src="@drawable/chevron_right"
+        waiter:backgroundTint="@color/accent"
+        waiter:layout_constraintBottom_toBottomOf="parent"
+        waiter:layout_constraintEnd_toEndOf="parent"
+        waiter:tint="@color/icons" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

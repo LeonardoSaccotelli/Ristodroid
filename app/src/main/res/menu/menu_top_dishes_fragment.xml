@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        android:title="@string/search" />
+
+    <item android:id="@+id/action_order_price"
+        android:title="@string/order_by_price"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item android:id="@+id/action_order_price_asc"
+                android:title="@string/order_from_lower" />
+
+            <item android:id="@+id/action_order_price_disc"
+                android:title="@string/order_from_higher" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/action_order_score"
+        android:title="@string/order_by_score"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item android:id="@+id/action_order_score_asc"
+                android:title="@string/order_from_lower" />
+
+            <item android:id="@+id/action_order_score_disc"
+                android:title="@string/order_from_higher" />
+        </menu>
+    </item>
+
+</menu>

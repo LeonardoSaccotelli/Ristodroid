@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_order_score_review"
+        android:title="@string/order_by_score"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item android:id="@+id/action_order_score_asc_review"
+                android:title="@string/order_from_lower" />
+
+            <item android:id="@+id/action_order_score_desc_review"
+                android:title="@string/order_from_higher" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/action_order_date_review"
+        android:title="@string/order_by_date"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item android:id="@+id/action_order_date_asc_review"
+                android:title="@string/order_from_lower" />
+
+            <item android:id="@+id/action_order_date_desc_review"
+                android:title="@string/order_from_higher" />
+        </menu>
+    </item>
+
+
+
+
+</menu>

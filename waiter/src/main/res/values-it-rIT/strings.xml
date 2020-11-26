@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_title">Benvenuto!</string>
+    <string name="choose_action">Cosa vuoi fare?</string>
+    <string name="menu">Menù</string>
+    <string name="bill">Conto</string>
+    <string name="title_menu">Menù</string>
+    <string name="title_summary">Riepilogo</string>
+    <string name="title_receipt">Conto</string>
+    <string name="row_category">Categoria</string>
+    <string name="title_dishes">Piatti</string>
+    <string name="title_details_dish">Dettagli Piatto</string>
+    <string name="button_add_dish">Aggiungi</string>
+    <string name="confirm">Conferma</string>
+    <string name="variations">Variazioni</string>
+    <string name="minusText">Rimuovi ingredienti</string>
+    <string name="plusText">Aggiungi ingredienti</string>
+    <string name="emptySummary">Non ci sono piatti in questo ordine.</string>
+    <string name="enterQuantityDish">Inserire Quantità</string>
+    <string name="cancel">Annulla</string>
+    <string name="confirmOrderMessage">Sei sicuro di voler confermare l\'ordine? Se clicchi si, non potrai più modificarlo!</string>
+
+
+
+    <string name="titleFailedConnectionDB">Attenzione</string>
+    <string name="messageFailedConnectionDB">Impossibile connettersi al database. Useremo l\'ultima versione di menu disponibile.</string>
+    <string name="emptyCategory">Non ci sono piatti in questa categoria.</string>
+    <string name="addQuantity">Aggiungi quantità</string>
+    <string name="removeQuantity">Rimuovi quantità</string>
+    <string name="deleteDish">Elimina piatto</string>
+    <string name="piece">Pz</string>
+    <string name="deleteDishMessage">Sei sicuro di voler rimuovere il piatto?</string>
+    <string name="addDishToOrder">Piatto aggiunto all\'ordine.</string>
+    <string name="closeOrderTitle">Completa ordine</string>
+    <string name="titleNoAddingDishCloseOrder">Ordine inviato!</string>
+    <string name="contentNoAddingDishCloseOrder">Non puoi aggiungere altri piatti a questo ordine.</string>
+    <string name="removeDishToOrder">Piatto rimosso dall\'ordine</string>
+    <string name="search">Cerca</string>
+    <string name="NoDishFound">Nessun piatto trovato</string>
+    <string name="SyncFailed">Sincronizzazione fallita, verrà visualizzato l\'ultimo menu disponibile</string>
+    <string name="OrderDataRequestFailed">Errore! Impossibile stabilire una connessione al server.</string>
+    <string name="receiptAvailable">Conto non disponibile.</string>
+    <string name="total">TOTALE</string>
+    <string name="message_beaming_complete">Trasferimento completato</string>
+    <string name="hint_your_message">Il tuo messaggio</string>
+    <string name="label_your_message">Messaggio NFC in uscita</string>
+    <string name="title_btn_set">Imposta Messaggio</string>
+    <string name="nfc_not_supported">NFC non è supportato su questo dispositivo. Non puoi utilizzare questa applicazione!</string>
+    <string name="titleConfirmError">Errore!</string>
+    <string name="seatNumber">numero di coperti</string>
+    <string name="seatType">tipo di coperto</string>
+    <string name="tableNumber">numero del tavolo</string>
+
+    <!--
+    SEZIONE DEDICATA ALLA DEFINIZIONE DEI PLURALI
+-->
+    <plurals name="numberOfIngredients">
+        <item quantity="one">Ingrediente</item>
+        <item quantity="other">Ingredienti</item>
+    </plurals>
+
+    <plurals name="numberOfAllergenic">
+        <item quantity="one">Allergene</item>
+        <item quantity="other">Allergeni</item>
+    </plurals>
+    <plurals name="numberOfFields">
+        <item quantity="one">Il campo </item>
+        <item quantity="other">I campi </item>
+    </plurals>
+    <plurals name="compilated">
+        <item quantity="one"> non è stato compilato.</item>
+        <item quantity="other"> non sono stati compilati.</item>
+    </plurals>
+
+    <plurals name="numberOfSeat">
+        <item quantity="one"> coperto</item>
+        <item quantity="other"> coperti</item>
+    </plurals>
+
+
+    <string name="app_name">Cameriere</string>
+    <string name="label_wait_receive_message">In attesa di ricevere un nuovo ordine...</string>
+    <string name="sendOrderToDbFailed">Errore! Impossibile inviare l\'ordine al server.</string>
+    <string name="sendOrderToDbSuccess">Ordine inviato correttamente!</string>
+    <string name="enableNFCRequestTitle">Abilita NFC</string>
+    <string name="enableNFCRequestContent">NFC non attivo! Attiva NFC per usare questa applicazione.</string>
+    <string name="Close">Chiudi</string>
+    <string name="TurnOn">Attiva</string>
+    <string name="tableTitleSection">Tavoli</string>
+    <string name="empty_table">Tavoli non inseriti per questo ristorante</string>
+    <string name="titleTableSelected">Inserire numero e tipo di coperti per</string>
+    <string name="tableNumberEnterInfo">tavolo</string>
+    <string name="seatInfo">Informazioni coperto</string>
+    <string name="select_seat_type">Seleziona coperto</string>
+    <string name="titleDialogSeatNumber">Inserire numero di persone</string>
+    <string name="notValidNumberSeat">Numero di coperti non valido!</string>
+    <string name="select_seat_number">Seleziona numero coperti</string>
+    <string name="extraInfoOrder">Aggiungi note sull\'ordine...</string>
+    <string name="deleteAllDishRequest">Sei sicuro di voler rimuovere tutti i piatti?</string>
+    <string name="deleteAllDishes">Elimina tutti i piatti</string>
+
+</resources>

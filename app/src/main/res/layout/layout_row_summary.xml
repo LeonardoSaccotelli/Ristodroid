@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orderDetails_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_list_order_dish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        android:animateLayoutChanges="?android:attr/windowSwipeToDismiss">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/summary_image_dish"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="@string/row_category"
+                android:scaleType="fitXY"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:srcCompat="@drawable/androidino" />
+
+            <TextView
+                android:id="@+id/text_summary_dish_title"
+                style="@style/dishTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="3dp"
+                android:paddingHorizontal="3dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toStartOf="@+id/summary_btn_delete_dish"
+                card_view:layout_constraintStart_toEndOf="@+id/summary_image_dish"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintVertical_bias="0.047"
+                tools:text="margherita" />
+
+            <TextView
+                android:id="@+id/summary_text_add_variations"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_summary_dish_title"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+
+                android:layout_marginEnd="8dp"
+                android:paddingHorizontal="3dp"
+                android:textColor="@color/plus_button"
+                card_view:layout_constraintBottom_toTopOf="@+id/summary_text_minus_variations"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/summary_image_dish"
+                card_view:layout_constraintTop_toBottomOf="@+id/text_summary_dish_title"
+                tools:text="+ Mozzarrella, Pomodoro, Ricotta" />
+
+            <TextView
+                android:id="@+id/summary_text_minus_variations"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/summary_text_add_variations"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+
+                android:layout_marginEnd="8dp"
+                android:paddingHorizontal="3dp"
+                android:textColor="@color/minus_button"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintStart_toEndOf="@+id/summary_image_dish"
+                card_view:layout_constraintTop_toBottomOf="@+id/summary_text_add_variations"
+                tools:text="- Mozzarrella, Pomodoro, Ricotta " />
+
+            <TextView
+                android:id="@+id/summary_text_dish_price"
+                style="@style/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/summary_text_add_variations"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="end"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/summary_text_minus_variations"
+                tools:text="€4.50" />
+
+            <TextView
+                android:id="@+id/summary_text_quantity_summary"
+                style="@style/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/summary_image_dish"
+                card_view:layout_constraintTop_toBottomOf="@+id/summary_text_minus_variations"
+                tools:text="1 pz" />
+
+            <Button
+                android:id="@+id/summary_btn_delete_dish"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/delete"
+                android:contentDescription="@string/deleteDish"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/text_summary_dish_title"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/summary_btn_add_quantity"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/plus_box"
+                android:contentDescription="@string/addQuantity"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/summary_btn_remove_quantity"
+                card_view:layout_constraintTop_toBottomOf="@+id/summary_text_minus_variations" />
+
+            <Button
+                android:id="@+id/summary_btn_remove_quantity"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/minus_box_outline"
+                android:contentDescription="@string/removeQuantity"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/summary_text_quantity_summary"
+                card_view:layout_constraintTop_toBottomOf="@+id/summary_text_minus_variations" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

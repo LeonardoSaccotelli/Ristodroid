@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/silverware_fork_knife"
+        android:title="@string/title_menu" />
+
+    <item
+        android:id="@+id/navigation_summary"
+        android:icon="@drawable/cart_variant"
+        android:title="@string/title_summary" />
+
+    <item
+        android:id="@+id/navigation_receipt"
+        android:icon="@drawable/cash_register"
+        android:title="@string/title_receipt" />
+</menu>

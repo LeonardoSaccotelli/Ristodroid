@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_title">Welcome!</string>
+    <string name="choose_action">What do you want to do?</string>
+    <string name="menu">Menu</string>
+    <string name="bill">Bill</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_summary">Summary</string>
+    <string name="title_receipt">Receipt</string>
+    <string name="row_category">Category</string>
+    <string name="title_dishes">Dishes</string>
+    <string name="title_details_dish">Dish Details</string>
+    <string name="button_add_dish">Add</string>
+    <string name="confirm">Confirm</string>
+    <string name="variations">Variations</string>
+    <string name="minusText">Remove ingredients</string>
+    <string name="plusText">Add ingredients</string>
+    <string name="emptySummary">There are no dishes in this order.</string>
+    <string name="enterQuantityDish">Enter Quantity</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="titleFailedConnectionDB">Warning</string>
+    <string name="messageFailedConnectionDB">"Unable to connect with the Database. We will use the last menu version available. "</string>
+    <string name="emptyCategory">There are no dishes in this category.</string>
+    <string name="addQuantity">Add quantity</string>
+    <string name="removeQuantity">Remove quantity</string>
+    <string name="deleteDish">Delete dish</string>
+    <string name="piece">Pcs</string>
+    <string name="deleteDishMessage">re you sure to delete this dish?</string>
+    <string name="addDishToOrder">DIsh added to order.</string>
+    <string name="confirmOrderMessage">Are you sure you want to confirm the order? If you click yes, you will no longer be able to edit it!</string>
+    <string name="closeOrderTitle">Close order</string>
+    <string name="titleNoAddingDishCloseOrder">Order sent!</string>
+    <string name="contentNoAddingDishCloseOrder">You can\'t add other dishes to this order.</string>
+    <string name="removeDishToOrder">Dish removed from order.</string>
+    <string name="search">Search</string>
+    <string name="NoDishFound">No dishes found</string>
+    <string name="SyncFailed">Synchronization failed, the last available menu will be displayed</string>
+    <string name="OrderDataRequestFailed">Error! Unable to connect to server.</string>
+    <string name="receiptAvailable">Receipt not available.</string>
+    <string name="total">TOTAL</string>
+    <string name="message_beaming_complete">Beaming complete</string>
+    <string name="hint_your_message">Your message</string>
+    <string name="label_your_message">Outgoing NFC message:</string>
+    <string name="title_btn_set">Set Message</string>
+    <string name="nfc_not_supported">NFC is not supported on this device. You cannot use this app!</string>
+    <string name="titleConfirmError">Error!</string>
+    <string name="seatNumber">number of seats</string>
+    <string name="seatType">type of seat</string>
+    <string name="tableNumber">number of table</string>
+    <!--
+    SEZIONE DEDICATA ALLA DEFINIZIONE DEI PLURALI
+-->
+    <plurals name="numberOfIngredients">
+        <item quantity="one">Ingredient</item>
+        <item quantity="other">Ingredients</item>
+    </plurals>
+
+    <plurals name="numberOfAllergenic">
+        <item quantity="one">Allergenic</item>
+        <item quantity="other">Allergenics</item>
+    </plurals>
+    <plurals name="numberOfFields">
+        <item quantity="one">Field </item>
+        <item quantity="other">Fields </item>
+    </plurals>
+    <plurals name="compilated">
+        <item quantity="one"> is not compilated.</item>
+        <item quantity="other"> are not compilated.</item>
+    </plurals>
+
+    <plurals name="numberOfSeat">
+        <item quantity="one"> seat</item>
+        <item quantity="other"> seats</item>
+    </plurals>
+
+
+
+    <string name="app_name">Waiter</string>
+    <string name="label_wait_receive_message">Waiting to receive a new order...</string>
+    <string name="sendOrderToDbFailed">Error! Unable to send order to server.</string>
+    <string name="sendOrderToDbSuccess">Order sent correctly!</string>
+    <string name="enableNFCRequestTitle">Enable NFC</string>
+    <string name="enableNFCRequestContent">NFC not enable! Turn on NFC to use this app.</string>
+    <string name="Close">Close</string>
+    <string name="TurnOn">Turn On</string>
+    <string name="tableTitleSection">Tables</string>
+    <string name="empty_table">Tables not entered for this restaurant</string>
+    <string name="titleTableSelected">Enter seat number e seat type for</string>
+    <string name="tableNumberEnterInfo">table</string>
+    <string name="seatInfo">Seat info</string>
+    <string name="select_seat_type">Select seat type</string>
+    <string name="titleDialogSeatNumber">Enter number of people</string>
+    <string name="notValidNumberSeat">Not valid seat entered!</string>
+    <string name="select_seat_number">Select seat number</string>
+    <string name="extraInfoOrder">Enter extra note...</string>
+    <string name="deleteAllDishRequest">Are you sure to delete all dishes?</string>
+    <string name="deleteAllDishes">Delete all dishes</string>
+
+</resources>
